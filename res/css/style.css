@@ -43,6 +43,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .flex.warp {flex-wrap: wrap; }
 .flex.gap1by2 {gap: 4px; }
 .flex.gap1 {gap: 8px; }
+.flex.gap41 {gap: 32px 8px; }
 .flex.gap2 {gap: 16px; }
 .flex.gap4 {gap: 32px; }
 .flex > .col {flex: 1 1 0%; }
@@ -132,7 +133,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .header .menu ul li a.active{ color: #EE2931; font-weight: 600; }
 .header .menu ul li a.active:hover{ color: #EE2931; }
 
-.list-img .flex-1 {max-width: 160px; min-width: 120px;}
+.list-img .flex-1 {max-width: 200px; min-width: 180px;}
 .list-img .img-item {width: 100%; padding-top: 30%;}
 .list-img .img-item a {position: absolute; width: 100%; height: 100%; top: 0; left: 0;border-radius: 4px; overflow: hidden;text-align: center;}
 .list-img .img-item a img{max-height:100%;max-width:100%; margin: 0 auto;}
@@ -167,7 +168,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .blog-card .blog-item .card:hover .card-body {transform: translateY(0);max-height: 160px;}
 .blog-card .blog-item .card:hover .card-foot {transform: translateY(0);opacity: 1}
 
-.img-card .img-item {width: 100%; max-width: 176px; max-width: 176px;}
+.img-card .img-item {width: 100%; min-width: 176px; max-width: 176px;}
 .img-card .img-item .card-item {width: 100%; position: relative; padding-top:100%;}
 .img-card .img-item .card-item:hover .card {transform: scale(1.1);}
 .img-card .img-item .card-item:hover .card .card-img {transform: scale(0.8);}
@@ -403,10 +404,11 @@ p {font-size: 20px; line-height:1.5; }
   .md-mb-4 {margin-bottom: 16px}
   .md-mb-4 {margin-bottom: 32px}
   h1 {font-size: 40px; line-height:1.5;}
-  h2 {font-size: 52px; line-height:1.5; margin-top: 0; margin-bottom: 16px;}
+  h2 {font-size: 32px; line-height:1.5; margin-top: 0; margin-bottom: 24px;}
   h3 {font-size: 40px; line-height:1.5; }
   h4 {font-size: 24px; line-height:1.5; }
   p {font-size: 20px; line-height:1.5; }
+  .section.why p {font-size: 16px; line-height: 1.65;}
 }
 @media(max-width:580px){
 	h2 {font-size: 32px; }
