@@ -120,7 +120,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .action {margin: 16px 0;}
 .br {width:100%;margin:32px 0;border: 1px dashed #FFFFFF;opacity:0.2}
 .underline {position: relative;}
-.underline:after {content: ""; position: absolute; position: absolute; left: 50%; transform: translateX(-50%); bottom: -12px; width: 100%; height: 12px; background-repeat: no-repeat; background-position: bottom center;}
+.underline:after {content: ""; position: absolute; position: absolute; left: 50%; transform: translateX(-50%); bottom: -6px; width: 100%; height: 12px; background-repeat: no-repeat; background-position: bottom center;}
 .underline.curve:after {background-image: url(../img/highlight.png);}
 .container{max-width:1280px;margin-left:auto; margin-right: auto;width: 100%;padding-left: 32px; padding-right: 32px;}
 .header-space { width: 100%; height: 84px;}
@@ -476,7 +476,7 @@ input::-ms-input-placeholder { color: #212121; }
 .footer ul {list-style: none; margin: 0; padding: 0;}
 .footer li {margin: 24px 0;}
 .footer a {cursor:pointer; font-size: 15px;}
-h1 {font-size: 52px; line-height:1.35; margin-top: 0; margin-bottom: 16px;}
+h1 {font-size: 44px; line-height:1.35; margin-top: 0; margin-bottom: 16px;}
 h2 {font-size: 40px; line-height:1.5; }
 h3 {font-size: 40px; line-height:1.5; }
 h4 {font-size: 20px; line-height:1.5; }
@@ -537,7 +537,7 @@ p {font-size: 20px; line-height:1.5; }
 }
 @media(max-width:580px){
 	h2 {font-size: 32px; }
-  h1 {font-size: 32px; line-height:1.5;}
+  h1 {font-size: 24px; line-height:1.5;}
   .h200 {min-height: 140px;}
 }
 @media(max-width:620px){
