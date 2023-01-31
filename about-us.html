@@ -13,8 +13,32 @@
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
   <body class="alice-blue">
+	<div class="header sidemenu">
+        <div class="header-space"></div>
+		<div class="container flex">
+			<div class="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a class="active" href="about-us.html">About us</a></li>
+					<li><a href="products.html">Product</a></li>
+					<li><a href="investors.html">Investors</a></li>
+					<li><a href="association.html">Association</a></li>
+					<li><a href="contact-us.html">Contact us</a></li>
+				</ul>
+			</div>
+			<div class="flex-1"></div>
+			<div class="menu">
+				<ul>
+					<li class="txt-center"><button class="btn primary">Log in</button></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<div class="header">
 		<div class="container flex">
+			<a class="menu-trigger md-show" onclick="handleMenu()">
+                <div class="menu-trigger-icon"><b></b></div>
+            </a>
 			<div class="logo">
 				<img src="res/img/logo.svg" alt="LetzConnect logo" />
 			</div>
@@ -23,8 +47,9 @@
 				<ul>
 					<li class="md-hide"><a href="index.html">Home</a></li>
 					<li class="md-hide"><a class="active" href="about-us.html">About us</a></li>
-					<li class="md-hide"><a href="">Product</a></li>
+					<li class="md-hide"><a href="products.html">Product</a></li>
 					<li class="md-hide"><a href="investors.html">Investors</a></li>
+					<li class="md-hide"><a href="association.html">Association</a></li>
 					<li class="md-hide"><a href="contact-us.html">Contact us</a></li>
 					<li><button class="btn primary">Log in</button></li>
 				</ul>
@@ -39,7 +64,7 @@
 				<div class="flex md-fd-col-i">
 					<div class="col">
 					<div class="content_left w620 txt-primary auto-ml md-auto-mw md-txt-center md-mt-4 md-mb-4 rel">
-                        <h1 class="txt-primary rel">India largest intranet and <span class="underline curve">networking</span> platform</h1>
+                        <h1 class="txt-primary rel">India Largest Intranet & <span class="underline curve">Networking</span> Platform</h1>
 						<div class="action rel"><a class="btn main blue round">Request a Demo</a></div>
 					</div>
 					</div>
@@ -57,7 +82,7 @@
 		<div class="container">
 			<div class="txt-center">
 				<h5 class="txt-secondary m-0 txt-w500 txt-up">Know More About Us</h5>
-				<h2 class="txt-primary mt-1">Our Story</h2>
+				<h2 class="txt-primary mt-1">Our story</h2>
 			</div>
 			<div class="flex my-4" style="max-width: 900px; margin: 0 auto">
 				<p class="txt-center">LetzConnect Technologies Pvt Ltd. was established in April 2016. The company was born out of a need to provide students with "Knowledge connectivity" and equip them with the requisite skills to become more employable in their chosen career paths</p>
@@ -65,7 +90,7 @@
 			<p><br /></p>
 			<div class="txt-center">
 				<h5 class="txt-secondary m-0 txt-w500 txt-up">Our Team</h5>
-				<h2 class="txt-primary mt-1">Meet Our Talented <br />Team Members</h2>
+				<h2 class="txt-primary mt-1">Meet our talented <br />team members</h2>
 			</div>
 			<div class="flex a-center gap4 warp user-card j-center my-4">
 				<div class="flex-1 user-item rel"><div class="card-item rel">
