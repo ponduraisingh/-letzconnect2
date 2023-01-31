@@ -1,5 +1,13 @@
 
 var slideIndex = 1;
+function handleMenu(n) {
+  var body = document.body.classList;
+  if (body.contains('openmenu')) {
+    body.remove('openmenu');
+  } else {
+    body.add('openmenu');
+  }
+}
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }

@@ -13,8 +13,32 @@
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
   <body>
+	<div class="header sidemenu">
+        <div class="header-space"></div>
+		<div class="container flex">
+			<div class="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about-us.html">About us</a></li>
+					<li><a class="active" href="products.html">Product</a></li>
+					<li><a href="investors.html">Investors</a></li>
+					<li><a href="association.html">Association</a></li>
+					<li><a href="contact-us.html">Contact us</a></li>
+				</ul>
+			</div>
+			<div class="flex-1"></div>
+			<div class="menu">
+				<ul>
+					<li class="txt-center"><button class="btn primary">Log in</button></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<div class="header">
 		<div class="container flex">
+			<a class="menu-trigger md-show" onclick="handleMenu()">
+                <div class="menu-trigger-icon"><b></b></div>
+            </a>
 			<div class="logo">
 				<img src="res/img/logo.svg" alt="LetzConnect logo" />
 			</div>
@@ -25,6 +49,7 @@
 					<li class="md-hide"><a href="about-us.html">About us</a></li>
 					<li class="md-hide"><a class="active" href="products.html">Product</a></li>
 					<li class="md-hide"><a href="investors.html">Investors</a></li>
+					<li class="md-hide"><a href="association.html">Association</a></li>
 					<li class="md-hide"><a href="contact-us.html">Contact us</a></li>
 					<li><button class="btn primary">Log in</button></li>
 				</ul>

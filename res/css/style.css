@@ -120,22 +120,39 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .action {margin: 16px 0;}
 .br {width:100%;margin:32px 0;border: 1px dashed #FFFFFF;opacity:0.2}
 .underline {position: relative;}
-.underline:after {content: ""; position: absolute; position: absolute; left: 50%; transform: translateX(-50%); bottom: -6px; width: 100%; height: 12px; background-repeat: no-repeat; background-position: bottom center;}
+.underline:after {content: ""; position: absolute; position: absolute; left: 50%; transform: translateX(-50%); bottom: -12px; width: 100%; height: 12px; background-repeat: no-repeat; background-position: bottom center;}
 .underline.curve:after {background-image: url(../img/highlight.png);}
 .container{max-width:1280px;margin-left:auto; margin-right: auto;width: 100%;padding-left: 32px; padding-right: 32px;}
-.header-space { width: 100%; height: 84px;}
-.header-bg { width: 100%; position: fixed; z-index: 1; top:0; left: 0; height: 84px; background-color: #FEF5F1; background: #FEF5F1CC; backdrop-filter: blur(4px);}
-.header { width: 100%; position: fixed; z-index: 3; top:0; left: 0; height: 84px; backdrop-filter: blur(2px);border-bottom:1px solid rgba(255,255,255,0.2);box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.04);background: #FEF5F133;}
+.header-space { width: 100%; height: 72px;}
+.header-bg { width: 100%; position: fixed; z-index: 1; top:0; left: 0; height: 72px; background-color: #FEF5F1; background: #FEF5F1CC; backdrop-filter: blur(4px);}
+.header { width: 100%; position: fixed; z-index: 10; top:0; left: 0; height: 72px; backdrop-filter: blur(2px);border-bottom:1px solid rgba(255,255,255,0.2);box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.04);background: #FEF5F133;}
+.header.sidemenu {transform: translate(-100%, 0); width: 100%; position: fixed; z-index: 5; height: 100%; max-width: 280px; width: 100%; display: flex; flex-direction: column; background-color: #FEF5F1CC; transition: transform 250ms ease; transform-origin:center;}
+.header.sidemenu .container {flex-direction: column; width: 100%; height: 100%; flex: 1 1 0%; box-shadow: 1px 0px 4px 0px rgba(0,0,0,0.12); border-right:1px solid rgba(255,255,255,0.2);}
+.header.sidemenu .menu {width: 100%;}
+.header.sidemenu .menu ul {flex-direction: column; width: 100%; gap: 24px; }
+.header.sidemenu .menu ul li {width: 100%; }
+.alice-blue .header.sidemenu { background-color: #EDF8FCcc;}
 .alice-blue .header-bg {background-color: #EDF8FC; background: #EDF8FCCC;}
-.header .container{ display: flex; align-items: center; padding-top: 16px; padding-bottom: 16px;}
-.header .logo{ max-height: 52px;}
-.header .logo img{ max-height: 52px; height: 100%;}
+.header .container{ display: flex; align-items: center; padding-top: 12px; padding-bottom: 12px; gap: 16px;}
+.header .logo{ max-height: 46px;}
+.header .logo img{ max-height: 46px; height: 100%;}
 .header .menu ul{ list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 16px; }
 .header .menu ul li a{ color: #212121; padding: 4px 8px; font-size: 16px; cursor: pointer; white-space: nowrap;}
 .header .menu ul li .btn{ white-space: nowrap;}
 .header .menu ul li a:hover{ color: #000000; }
 .header .menu ul li a.active{ color: #EE2931; font-weight: 600; }
 .header .menu ul li a.active:hover{ color: #EE2931; }
+.openmenu .header.sidemenu {transform: translate(0, 0);}
+
+.menu-trigger {cursor: pointer; background: rgba(255,255,255,0.04); transition: background 250ms ease; padding: 8px; border-radius: 4px;}
+.menu-trigger:hover {background: rgba(255,255,255);}
+.menu-trigger-icon { position: relative; width: 32px; height: 32px;}
+.menu-trigger-icon::before{content: ""; position: absolute; width: 32px; height: 2px; background: #0E1552; transform: translate(0px, 6px) rotate(0deg); transition: transform 250ms ease; transform-origin:center;}
+.menu-trigger-icon::after{content: ""; position: absolute; width: 32px; height: 2px; background: #0E1552; transform: translate(0px, 24px) rotate(0deg); transition: transform 250ms ease; transform-origin:center;}
+.menu-trigger-icon b{content: "";position: absolute; width: 32px; height: 2px; top: 50%; margin-top: -1px; background: #0E1552; transition: transform 250ms ease; transform-origin:center;}
+.openmenu .menu-trigger-icon::before{ transform: translate(0px, 15px) rotate(45deg)}
+.openmenu .menu-trigger-icon::after{ transform: translate(0px, 15px) rotate(-45deg)}
+.openmenu .menu-trigger-icon b{opacity: 0;}
 
 .list-img .flex-1 {max-width: 200px; min-width: 180px;}
 .list-img .img-item {width: 100%; padding-top: 30%;}
@@ -187,8 +204,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .img-card .img-item .card-item {width: 100%; position: relative; padding-top:100%; }
 .img-card .img-item .card-item:hover .card {transform: scale(1.1);}
 .img-card .img-item .card-item:hover .card .card-img {transform: scale(0.8);}
-.img-card .img-item .card { transform: scale(1);transition: 0.4s ease-out; position: absolute; overflow: hidden; width: 100%; height: 100%; top: 0; left: 0;background: #FFFFFF; box-shadow: 0px 2px 6px 0px rgba(136, 136, 136, 0.24); border-radius: 6px; padding:16px; display: flex; align-items: center; }
-.img-card .img-item .card .card-img {transform: scale(1);transition: 0.4s ease-out; max-height: 80px; max-width: 100%;}
+.img-card .img-item .card { transform: scale(1);transition: 0.4s ease-out; justify-content: center; position: absolute; overflow: hidden; width: 100%; height: 100%; top: 0; left: 0;background: #FFFFFF; box-shadow: 0px 2px 6px 0px rgba(136, 136, 136, 0.24); border-radius: 6px; padding:16px; display: flex; align-items: center; }
+.img-card .img-item .card .card-img {transform: scale(1);transition: 0.4s ease-out; max-height: 100%; max-width: 100%;}
 .img-card .img-item .card .card-img img{ max-width: 100%; max-height: 100%; width: 100%; height: 100%; object-fit: cover;}
 
 .update-cards .update-item {width: 100%;min-width: 280px; max-width: 280px;}
@@ -476,7 +493,7 @@ input::-ms-input-placeholder { color: #212121; }
 .footer ul {list-style: none; margin: 0; padding: 0;}
 .footer li {margin: 24px 0;}
 .footer a {cursor:pointer; font-size: 15px;}
-h1 {font-size: 44px; line-height:1.35; margin-top: 0; margin-bottom: 16px;}
+h1 {font-size: 44px; line-height:1.35; margin-top: 0; margin-bottom: 16px; overflow: visible;}
 h2 {font-size: 40px; line-height:1.5; }
 h3 {font-size: 40px; line-height:1.5; }
 h4 {font-size: 20px; line-height:1.5; }

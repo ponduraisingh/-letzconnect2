@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="res/img/favicon.png" type="image/x-icon" />
+    <title>LetzConnect</title>
+	
+    <!-- Techfully CSS -->
+    <link rel="stylesheet" href="res/css/style.css" />
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+	<div class="header sidemenu">
+        <div class="header-space"></div>
+		<div class="container flex">
+			<div class="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about-us.html">About us</a></li>
+					<li><a href="products.html">Product</a></li>
+					<li><a href="investors.html">Investors</a></li>
+					<li><a class="active" href="association.html">Association</a></li>
+					<li><a href="contact-us.html">Contact us</a></li>
+				</ul>
+			</div>
+			<div class="flex-1"></div>
+			<div class="menu">
+				<ul>
+					<li class="txt-center"><button class="btn primary">Log in</button></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="header">
+		<div class="container flex">
+			<a class="menu-trigger md-show" onclick="handleMenu()">
+                <div class="menu-trigger-icon"><b></b></div>
+            </a>
+			<div class="logo">
+				<img src="res/img/logo.svg" alt="LetzConnect logo" />
+			</div>
+			<div class="flex-1"></div>
+			<div class="menu">
+				<ul>
+					<li class="md-hide"><a href="index.html">Home</a></li>
+					<li class="md-hide"><a href="about-us.html">About us</a></li>
+					<li class="md-hide"><a href="products.html">Product</a></li>
+					<li class="md-hide"><a href="investors.html">Investors</a></li>
+					<li class="md-hide"><a class="active" href="association.html">Association</a></li>
+					<li class="md-hide"><a href="contact-us.html">Contact us</a></li>
+					<li><button class="btn primary">Log in</button></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="header-bg"></div>
+	<div class="banner-cover rel">
+		<div class="header-space"></div>
+	</div>
+	<div class="section government" style="padding: 48px 0 48px 0;">
+		<div class="container">
+		<div class="content">
+			<div class="txt-center mb-8">
+				<h2 class="txt-primary mt-1"><span class="underline curve">Government</span> Associations</h2>
+			</div>
+			<div class="flex a-center gap4 warp img-card j-center my-4">
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/government-1.png" alt="MHRD"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/government-2.png" alt="AICTE"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/government-3.png" alt="NEAT"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/government-4.png" alt="EventsHigh"/>
+						</span>
+					</a>
+				</div></div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="section partner" style="padding: 48px 0 48px 0;">
+		<div class="container">
+		<div class="content">
+			<div class="txt-center mb-8">
+				<h2 class="txt-primary mt-1"><span class="underline curve">Corporate</span> Associations</h2>
+			</div>
+			<div class="flex a-center gap4 warp img-card j-center my-4">
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/corporate-1.png" alt="Airtel"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/corporate-2.png" alt="ManPower"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/corporate-3.png" alt="Google"/>
+						</span>
+					</a>
+				</div></div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="section employment" style="padding: 48px 0 48px 0;">
+		<div class="container">
+		<div class="content">
+			<div class="txt-center mb-8">
+				<h2 class="txt-primary mt-1"><span class="underline curve">Employment</span> Associations</h2>
+			</div>
+			<div class="flex a-center gap4 warp img-card j-center my-4">
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/employment-1.png" alt="InternShala"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/employment-2.png" alt="HelloIntern"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/employment-3.png" alt="LetsIntern"/>
+						</span>
+					</a>
+				</div></div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="section partner">
+		<div class="container">
+		<div class="content">
+			<div class="txt-center mb-8">
+				<h2 class="txt-primary mt-1">Our <span class="underline curve">Content Partner</span></h2>
+			</div>
+			<div class="flex a-center gap4 warp img-card j-center my-4">
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/company-1.png" alt="Udemy"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/company-2.png" alt="Google"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/company-3.png" alt="NPTEL"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/company-4.png" alt="EventsHigh"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/company-5.png" alt="magicmarks"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/company-6.png" alt="eduonix"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/company-8.png" alt="company-8"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/company-9.png" alt="company-9"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/company-10.png" alt="company-10"/>
+						</span>
+					</a>
+				</div></div>
+				<div class="flex-1 img-item rel"><div class="card-item rel">
+					<a href="" class="card">
+						<span class="card-img">
+							<img src="res/img/company-7.png" alt="company-7"/>
+						</span>
+					</a>
+				</div></div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="section feedback bg-blue">
+		<div class="container">
+	<div class="flex md-fd-col gap4">
+		<div class="col">
+		<div class="logo">
+			<img src="res/img/logo-1.svg" alt="LetzConnect logo" />
+		</div>
+		<div class="flex gap4 footer">
+			<div class="col">
+			<h4 class="txt-white">About</h4>
+			<ul>
+			<li><a class="txt-white">Careers</a></li>
+			<li><a class="txt-white">Contact Us</a></li>
+			</ul>
+			</div>
+			<div class="col">
+			<h4 class="txt-white">Legal</h4>
+			<ul>
+			<li><a class="txt-white">Terms & Conditions</a></li>
+			<li><a class="txt-white">Privacy Policy</a></li>
+			<li><a class="txt-white">User Acceptance Policy</a></li>
+			</ul>
+			</div>
+		</div>
+		</div>
+		<div class="col">
+		<div class="w420 auto-mw">
+			<div class="form bg-white">
+<div class="flex gap2">
+<div class="col">
+<fieldset>
+	<input placeholder="First name" type="text">
+</fieldset>
+<fieldset>
+	<input placeholder="Business Email" type="text">
+</fieldset>
+<fieldset>
+<div class="select-dropdown">
+	<select>
+	<option value="">I work at</option>
+	<option value="Option 1">First Option</option>
+	<option value="Option 2">2nd Option</option>
+	<option value="Option 3">Option Number 3</option>
+	</select>
+</div>
+</fieldset>
+</div>
+<div class="col">
+<fieldset>
+	<input placeholder="Last name" type="text">
+</fieldset>
+<fieldset>
+<div class="select-dropdown">
+	<select>
+	<option value="">Country</option>
+	<option value="Option 1">First Option</option>
+	<option value="Option 2">2nd Option</option>
+	<option value="Option 3">Option Number 3</option>
+	</select>
+</div>
+</fieldset>
+<fieldset>
+	<input placeholder="Phone Number" type="text">
+</fieldset>
+</div>
+</div>
+<button class="btn btn-primary w100">Request a Demo</button>
+		</div>
+	</div>
+	</div>
+</div>
+<div class="br"></div>
+	<div class="flex j-center a-center gap2 copyright" style="opacity: 0.6">
+	<p><a class="txt-white">&copy; Copyright 2022</a></p> <p class="txt-white sp-hide">|</p>
+	<p><a class="txt-white">All Rights Reserved</a></p> <p class="txt-white sp-hide">|</p>
+	<p><a class="txt-white">LetzConnect<sup>&reg;</sup></a></p>
+	</div>
+	</div>
+	</div>
+  </body>
+  <script src="res/js/main.js"></script>
+</html>
