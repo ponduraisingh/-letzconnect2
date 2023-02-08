@@ -115,4 +115,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         delay: 10
     });
     showSlides(slideIndex);
+	var splide = new Splide( '.splide', {
+		  type   : 'loop',
+		});
+    splide.mount();
 });
